@@ -1,0 +1,284 @@
+```html
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Mink_vu ♥</title>
+
+<style>
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    width: 100%;
+    height: 100%;
+}
+
+body {
+    overflow: hidden;
+    font-family: Arial, sans-serif;
+    background: #050510;
+    color: white;
+}
+
+/* =========================
+   VIDEO NỀN
+========================= */
+
+#bg-video {
+    position: fixed;
+    inset: 0;
+
+    width: 100%;
+    height: 100%;
+
+    object-fit: cover;
+
+    z-index: -3;
+}
+
+/* Lớp tối để chữ dễ nhìn */
+.overlay {
+    position: fixed;
+    inset: 0;
+
+    background:
+        linear-gradient(
+            rgba(5, 5, 20, 0.35),
+            rgba(5, 5, 20, 0.55)
+        );
+
+    z-index: -2;
+}
+
+/* =========================
+   NỘI DUNG GIỮA
+========================= */
+
+.container {
+    position: fixed;
+
+    top: 50%;
+    left: 50%;
+
+    transform: translate(-50%, -50%);
+
+    width: min(90%, 430px);
+
+    padding: 35px 28px;
+
+    text-align: center;
+
+    background: rgba(10, 10, 20, 0.35);
+
+    border: 1px solid rgba(255,255,255,0.18);
+
+    border-radius: 25px;
+
+    backdrop-filter: blur(8px);
+
+    box-shadow:
+        0 0 35px rgba(255, 120, 200, 0.15);
+
+    z-index: 10;
+}
+
+/* =========================
+   TÊN
+========================= */
+
+.name {
+    font-size: clamp(42px, 9vw, 65px);
+
+    font-weight: bold;
+
+    letter-spacing: 3px;
+
+    text-shadow:
+        0 0 10px white,
+        0 0 25px #ffb6dc,
+        0 0 50px #ff65bd;
+
+    animation: glow 3s ease-in-out infinite alternate;
+}
+
+@keyframes glow {
+    from {
+        text-shadow:
+            0 0 10px white,
+            0 0 20px #ffb6dc;
+    }
+
+    to {
+        text-shadow:
+            0 0 20px white,
+            0 0 40px #ff65bd,
+            0 0 70px #ff2fac;
+    }
+}
+
+.heart {
+    display: inline-block;
+
+    color: #ff6fba;
+
+    text-shadow:
+        0 0 10px #ff4eb8,
+        0 0 25px #ff4eb8;
+
+    animation: heartBeat 1.2s infinite;
+}
+
+@keyframes heartBeat {
+    50% {
+        transform: scale(1.22);
+    }
+}
+
+.subtitle {
+    margin-top: 8px;
+    margin-bottom: 25px;
+
+    font-size: 13px;
+
+    letter-spacing: 4px;
+
+    color: rgba(255,255,255,0.85);
+}
+
+/* =========================
+   4 LINK
+========================= */
+
+.links {
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 13px;
+}
+
+.social {
+    display: block;
+
+    width: 100%;
+
+    padding: 14px 18px;
+
+    text-decoration: none;
+
+    color: white;
+
+    font-size: 18px;
+
+    font-weight: 600;
+
+    letter-spacing: 1px;
+
+    border-radius: 14px;
+
+    background: rgba(255,255,255,0.08);
+
+    border: 1px solid rgba(255,255,255,0.20);
+
+    box-shadow:
+        0 0 10px rgba(255,255,255,0.04);
+
+    transition:
+        transform 0.25s ease,
+        background 0.25s ease,
+        box-shadow 0.25s ease;
+}
+
+.social:hover {
+    transform: scale(1.06);
+
+    background: rgba(255, 130, 200, 0.18);
+
+    box-shadow:
+        0 0 15px rgba(255,150,220,0.55),
+        0 0 35px rgba(255,100,200,0.25);
+
+    text-shadow:
+        0 0 10px white,
+        0 0 20px #ff9bd7;
+}
+
+/* =========================
+   FOOTER
+========================= */
+
+.footer {
+    margin-top: 24px;
+
+    color: rgba(255,255,255,0.75);
+
+    font-size: 13px;
+}
+
+/* =========================
+   HOA ANH ĐÀO
+========================= */
+
+.petal {
+    position: fixed;
+
+    top: -25px;
+
+    width: 12px;
+    height: 8px;
+
+    background:
+        linear-gradient(
+            135deg,
+            #ffd6e8,
+            #ff91c8
+        );
+
+    border-radius:
+        100% 0 100% 0;
+
+    opacity: 0.85;
+
+    z-index: 5;
+
+    pointer-events: none;
+
+    box-shadow:
+        0 0 7px rgba(255,160,215,0.65);
+
+    animation-name: fall;
+    animation-timing-function: linear;
+    animation-fill-mode: forwards;
+}
+
+@keyframes fall {
+
+    0% {
+        transform:
+            translate3d(0, -30px, 0)
+            rotate(0deg);
+    }
+
+    25% {
+        transform:
+            translate3d(60px, 25vh, 0)
+            rotate(90deg);
+    }
+
+    50% {
+        transform:
+            translate3d(-40px, 50vh, 0)
+            rotate(180deg);
+    }
+
+    75% {
+        transform:
+            translate3d(80px, 75vh, 0)
+            rota
+```
